@@ -1,92 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-<style type="text/css">
+  <meta charset="UTF-8">
+  <title>Kamon Holo</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #00ffcc;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
 
-.table{
-color:blue;
+    .typewriter, .typewriter2 {
+      font-size: 26px;
+      border-right: 3px solid #00ffcc;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      margin: 10px 0;
+    }
 
-position:center;
-}
+    .typewriter {
+      animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
+    }
 
-h4{
+    .typewriter2 {
+      animation: typing2 4s steps(25, end) forwards;
+      animation-delay: 4.5s;
+    }
 
-font-family:Arial,sans-serif;
-border:red;
-}
-caption{
+    .subtitle {
+      font-size: 20px;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-delay: 8.5s;
+    }
 
-font-color: red;
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 28ch }
+    }
 
-}
+    @keyframes typing2 {
+      from { width: 0 }
+      to { width: 23ch }
+    }
 
-</style>
-<title></title>
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #00ffcc }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    .table-box {
+      background-color: #ffffff;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      width: fit-content;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table, td, th {
+      border: 1px solid black;
+    }
+
+    td, th {
+      padding: 10px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-position: inside;
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    img {
+      border: 2px solid black;
+    }
+  </style>
 </head>
 <body>
-<h4> Ajka sar je poraise 😁 </h4>
 
-<div class="table" >
-<table border="1" cellspacing="0" >
+  <div class="typewriter">Ajka sar je poraise 😁</div>
+  
+  <div class="typewriter2">SP Siam Ahmed - কোডার</div>
+  <div class="subtitle">Web Developer</div>
 
-<tr align="center">
- <td colspan="3" >Bangladesh</td>
- 
- 
- </tr>
+  <div class="table-box">
+    <table>
+      <tr align="center">
+        <td colspan="3">Bangladesh</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><img src="2.jpg" height="120" width="80"></td>
+        <td colspan="2">X DIVISION</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>S</td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
 
-<tr>
-<td rowspan="4"><img src="2.jpg" height="120" width="80" ></td>
+  <div class="table-box">
+    <table>
+      <tr height="50">
+        <td>
+          <ul type="circle">
+            <li>A
+              <ul type="disc">
+                <li>Y</li>
+                <li>X</li>
+              </ul>
+            </li>
+            <li>B
+              <ul type="disc">
+                <li>Z</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td>log<sub>10</sub> x<sup>2</sup></td>
+      </tr>
+    </table>
 
-</tr>
-<tr> 
-<td colspan="2" > X DIViSITION </td>
-</tr>
-<tr>
-<td> M </td>
-<td> S </td>
-<tr> 
-<td> H </td>
-<td> </td>
-</tr>
-</tr>
-
-
-
-</table>
-
-
-</div>
-<br> 
-
-<table border="1" cellspacing="0" >
-<tr height="50" >
- 
- <td>
- <ul type="circle">
- <li> A
- <ul type="disc" >
- <li> Y </li>
- <li> X </li> 
- </ul> </li>
-<li> B </li>
-
-<ul type="disc"> 
-
-<li>Z</li>
-</ul>
- </td>
-</ul>
-</li>
- <td> log <sub>10 </sub> x <sup>2 </sup> </td>
- 
-</tr>
-
-
-
-
-
-</table>
-
+  </div>
+<div class="subtitle">Kemon Holo 😁🙃</div>
 </body>
 </html>
